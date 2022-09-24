@@ -1,0 +1,606 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar {
+    top: 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    position: sticky;
+}
+
+:root {
+    --navbar-hieght: 80px;
+}
+
+#logo {
+    margin: 12px, 36px;
+
+}
+
+#logo img {
+    height: 60px;
+    margin: 3px, 6px;
+}
+
+
+/* navbar section */
+#navbar ul {
+    display: flex;
+    text-align: right;
+}
+
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+
+#navbar ul li {
+
+
+    list-style: none;
+    font-size: 1.4rem;
+    text-align: right;
+}
+
+#navbar ul li a {
+    /* display: block; */
+    color: white;
+    padding: 3px;
+    border-radius: 12 px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+
+    color: black;
+    background-color: white;
+}
+
+li {
+    margin: 7px;
+}
+
+/* Home section */
+#Home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+
+
+}
+
+#Home::before {
+    content: "";
+    position: absolute;
+    background-image: url("https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466_1280.jpg");
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 1.4;
+
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Sofia", sans-serif;
+}
+
+/* Service section */
+#services .box img {
+    height: 160px;
+    margin-top: auto;
+    display: block;
+}
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: #f2f2f2;
+    margin-bottom: 25px;
+}
+
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p {
+    font-family: 'Bree Serif ', serif;
+}
+
+#services-container {
+    padding: 34px;
+    width: 100%;
+}
+
+
+
+#client {
+    margin: 34px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#client-section {
+
+    height: 244px;
+}
+
+#client-section .box::before {
+    content: "";
+    position: absolute;
+    background-image: url("https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466_1280.jpg");
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 1.4;
+}
+
+#client .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: #1f1717;
+}
+
+#client .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+    border-radius: 130px;
+}
+
+.h-secondary {
+    color: white;
+}
+
+.center {
+    color: white;
+}
+
+.first {
+    font-size: 3.8rem;
+    padding: 12px;
+    color: white;
+    font-family: 'Bree Serif ', serif;
+}
+
+#para {
+    color: white;
+}
+
+.sec {
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif ', serif;
+}
+
+.h1-primary {
+    font-family: 'Bree Serif ', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+    color: black;
+
+}
+
+.h1-secondary {
+    font-family: 'Bree Serif ', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+    color: black;
+}
+
+.h-primary {
+    font-family: 'Bree Serif ', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+    color: black;
+}
+
+.h2-secondary {
+    color: white;
+    font-family: 'Bree Serif ', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.Dhoni {
+    color: white;
+    font-family: 'Bree Serif ', serif;
+    font-size: 1.3rem;
+    padding: 12px;
+}
+
+.h2-secondary {
+    font-family: 'Bree Serif ', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+    color: black;
+}
+
+.btn {
+    padding: 6px 20px;
+    margin: 17px;
+    border: 2px solid white;
+    background-color: brown;
+    color: WHITE;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-image: linear-gradient(#6c1f4c, rgb(150, 33, 33));
+}
+
+.btn:hover {
+    background-color: rgb(134, 30, 30);
+    background-image: linear-gradient(#4e1737, rgb(118, 19, 19));
+}
+
+.sub {
+    padding: 6px 20px;
+    margin: 17px;
+    border: 2px solid white;
+    background-color: brown;
+    color: WHITE;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 24%;
+    display: flex;
+    align-items: center;
+    margin-left: 194px;
+    background-image: linear-gradient(#936f46, rgb(139, 84, 47));
+
+}
+
+.sub:hover {
+    background-color: rgb(134, 30, 30);
+    background-image: linear-gradient(#765938, rgb(98, 56, 28));
+}
+
+.center {
+    text-align: center;
+    color: black;
+}
+
+.d {
+    font-size: larger;
+    color: rgb(196, 116, 130);
+}
+
+.v {
+    color: white;
+    font-size: large;
+}
+
+#services-container {
+    content: "";
+    position: relative;
+    background-image: url("https://cdn.pixabay.com/photo/2017/03/27/12/39/kettles-2178442_1280.jpg");
+    width: 95%;
+    height: 74%;
+    top: 1113px;
+
+    left: 0px;
+    right: 40px;
+    z-index: -1;
+    opacity: 1.4;
+}
+
+span {
+    color: white;
+}
+
+/* Client container */
+#client-container {
+    content: "";
+    position: absolute;
+    background: url("https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg");
+    width: 100%;
+    top: 3287px;
+    left: 0px;
+    z-index: -1;
+    opacity: 1.4;
+    height: 117%;
+    margin-bottom: 0px;
+}
+
+#client {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+#clients img {
+
+    height: 124px;
+    align-items: center;
+    padding: 50px;
+    border-radius: 150px;
+    margin: 20px;
+
+}
+
+/* Contact section */
+#contact {
+    position: relative;
+    top: 1680px;
+    height: 1000%;
+    margin-top: 200px;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1.7;
+    background: url("https://cdn.pixabay.com/photo/2019/05/10/13/28/contact-us-4193523_1280.jpg") no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    padding-top: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif ', serif;
+}
+
+.copy {
+    background: black;
+    color: white;
+    padding: 5px 15px;
+    position: absolute;
+    text-align: center;
+    left: -49px;
+    width: 100%;
+}
+
+#about .abp img {
+    display: flex;
+    height: 260px;
+    margin: -56px;
+    padding: 95px;
+    padding-left: 730px;
+    padding-bottom: -26px;
+    /* display: flex; */
+
+
+}
+
+#about .aaj img {
+    height: 260px;
+    display: flex;
+    /* margin: 107px; */
+    margin: -8px;
+    padding: -8px;
+    padding-left: 46px;
+    padding-bottom: 38px;
+
+
+}
+
+#about-container::before {
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    z-index: -1;
+    background: url("https://cdn.pixabay.com/photo/2020/01/31/02/16/texture-4806956_1280.jpg") no-repeat center center/cover;
+}
+
+.pa {
+
+    color: white;
+    display: flex;
+    position: absolute;
+    /* float: left; */
+    margin: 55px;
+    margin-top: 6px;
+    padding: 526px;
+    padding-left: 34px;
+    padding-top: 116px;
+    width: 45%;
+}
+
+.ra {
+
+    color: white;
+    display: flex;
+    position: absolute;
+    /* float: left; */
+    margin: 55px;
+    margin-top: -28px;
+    padding: 30px;
+    padding-left: 526px;
+    padding-top: 116px;
+    width: 45%;
+}
+
+#menu.ra {
+
+    border: 2px black solid;
+    color: white;
+    display: flex;
+    margin: 34px;
+    padding: 34px;
+    padding-left: 34px;
+    padding-top: 34px;
+    width: 50%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* menu section */
+#menu-container {
+    content: "";
+    position: absolute;
+    background: url("https://cdn.pixabay.com/photo/2014/06/16/23/39/black-370118_1280.png") no-repeat center center/cover;
+    width: 100%;
+    top: 1415px;
+    left: 0px;
+    z-index: -1;
+    opacity: 1.4;
+    height: 175%;
+
+    margin-bottom: 0px;
+}
+
+#menu-container .live img {
+    display: flex;
+    height: 259px;
+    margin: 98px;
+    /* padding-left: 28px; */
+    padding-left: 26px;
+
+}
+
+#menu-container .life img {
+    display: flex;
+    margin: -1301px;
+    top: 1518px;
+    padding: -23px;
+    position: absolute;
+    padding-left: 1976px;
+    height: 260px;
+
+}
+
+#menu-container .happy img {
+    top: 914px;
+    display: flex;
+    margin: -755px;
+    position: absolute;
+    padding: 448px;
+    height: 260px;
+    padding-left: 1154px;
+
+}
+
+#menu-container .p {
+    display: flex;
+    position: absolute;
+    top: 169px;
+    color: rgb(234, 218, 218);
+    margin: 243px;
+    padding: -6px;
+    padding-left: -69px;
+    padding-left: -31px;
+    padding-top: 77px;
+    font-size: 2.5rem;
+
+
+}
+
+#menu-container .a {
+    color: rgb(246 223 208);
+    padding: -12px;
+    top: 392px;
+    position: absolute;
+    padding: -27px;
+    color: rgb(234, 218, 218);
+    margin: 96px;
+    padding: -6px;
+    padding-left: 584px;
+    padding-left: -48px;
+    padding-top: 0px;
+    font-size: 2.5rem;
+
+}
+
+#menu-container .r {
+    color: rgb(234, 218, 218);
+    margin: 180px;
+    top: 712px;
+    padding: -6px;
+    position: absolute;
+    padding-left: 280px;
+    padding-top: 0px;
+    font-size: 2.5rem;
+}
+
+.head {
+    color: white;
+    display: flex;
+    position: absolute;
+    top: 98px;
+    padding-left: 36px;
+    font-size: 1.3rem;
+}
+
+.bed {
+    color: rgb(216, 150, 244);
+    font-size: 5.3rem;
+}
+
+.n {
+    font-size: 3.5rem;
+    color: #4e1737;
+}
+
+.hamla {
+    color: #720e12;
+    font-size: 2rem;
+    padding-left: 529px;
+}
